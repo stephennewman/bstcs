@@ -7,9 +7,17 @@ export default function Home() {
           <div className="text-2xl sm:text-3xl font-black" style={{ color: '#1A1A1A' }}>
             NEWMAN INTELLIGENCE
           </div>
-          <button className="text-sm sm:text-base font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform shadow-md" style={{ backgroundColor: '#41ab5d', color: '#FFFFFF' }}>
-            📥 Download Report
-          </button>
+          <div className="flex items-center space-x-4">
+            <a href="/" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#1F2937' }}>
+              Home
+            </a>
+            <a href="/blog" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#41ab5d' }}>
+              Blog
+            </a>
+            <button className="text-sm sm:text-base font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform shadow-md" style={{ backgroundColor: '#41ab5d', color: '#FFFFFF' }}>
+              📥 Download Report
+            </button>
+          </div>
         </div>
       </header>
 
