@@ -7,7 +7,9 @@ export const metadata: Metadata = {
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#1A1A1A' }}>
+    <div className="min-h-screen" style={{ 
+      background: 'linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 50%, #1F1F1F 100%)'
+    }}>
       {/* Header */}
       <header className="px-4 sm:px-8 lg:px-16 py-4 sm:py-6" style={{ backgroundColor: '#1A1A1A' }}>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -44,7 +46,9 @@ export default function DashboardPage() {
           {/* Key Metrics Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {/* Total Balance Card */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(45deg, #2C2C2C 0%, #3A3A3A 50%, #2F2F2F 100%)'
+            }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Total Balance</h3>
                 <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#41ab5d' }}>
@@ -59,7 +63,9 @@ export default function DashboardPage() {
             </div>
 
             {/* Active Users Card */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(135deg, #2C2C2C 0%, #2F2F2F 30%, #3A3A3A 100%)'
+            }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Active Users</h3>
                 <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#3B82F6' }}>
@@ -74,7 +80,9 @@ export default function DashboardPage() {
             </div>
 
             {/* Revenue Card */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(225deg, #2C2C2C 0%, #3A3A3A 40%, #2F2F2F 100%)'
+            }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Monthly Revenue</h3>
                 <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#F59E0B' }}>
@@ -89,7 +97,9 @@ export default function DashboardPage() {
             </div>
 
             {/* Conversion Rate Card */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(315deg, #2C2C2C 0%, #2F2F2F 25%, #3A3A3A 75%, #2C2C2C 100%)'
+            }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Conversion Rate</h3>
                 <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#8B5CF6' }}>
@@ -107,7 +117,9 @@ export default function DashboardPage() {
           {/* Charts and Analytics Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Revenue Chart */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(60deg, #2C2C2C 0%, #3A3A3A 60%, #2F2F2F 100%)'
+            }}>
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-white">Revenue Overview</h3>
                 <div className="flex space-x-2">
@@ -157,7 +169,9 @@ export default function DashboardPage() {
             </div>
 
             {/* Recent Activity */}
-            <div className="p-6 rounded-2xl" style={{ backgroundColor: '#2C2C2C' }}>
+            <div className="p-6 rounded-2xl" style={{ 
+              background: 'linear-gradient(300deg, #2C2C2C 0%, #2F2F2F 35%, #3A3A3A 70%, #2C2C2C 100%)'
+            }}>
               <h3 className="text-lg font-semibold text-white mb-6">Recent Activity</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -198,7 +212,7 @@ export default function DashboardPage() {
 
           {/* Call to Action Section */}
           <div className="p-8 rounded-2xl text-center" style={{ 
-            background: 'linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%)',
+            background: 'linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 25%, #2F2F2F 50%, #3A3A3A 75%, #2C2C2C 100%)',
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
           }}>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
