@@ -47,7 +47,7 @@ export default function DashboardPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {/* Total Balance Card */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(45deg, #2C2C2C 0%, #3A3A3A 50%, #2F2F2F 100%)'
+              background: 'linear-gradient(45deg, #1A1A1A 0%, #404040 50%, #2A2A2A 100%)'
             }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Total Balance</h3>
@@ -64,7 +64,7 @@ export default function DashboardPage() {
 
             {/* Active Users Card */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(135deg, #2C2C2C 0%, #2F2F2F 30%, #3A3A3A 100%)'
+              background: 'linear-gradient(135deg, #2D2D2D 0%, #C0C0C0 30%, #4A4A4A 100%)'
             }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Active Users</h3>
@@ -81,7 +81,7 @@ export default function DashboardPage() {
 
             {/* Revenue Card */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(225deg, #2C2C2C 0%, #3A3A3A 40%, #2F2F2F 100%)'
+              background: 'linear-gradient(225deg, #0F0F0F 0%, #808080 40%, #333333 100%)'
             }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Monthly Revenue</h3>
@@ -98,7 +98,7 @@ export default function DashboardPage() {
 
             {/* Conversion Rate Card */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(315deg, #2C2C2C 0%, #2F2F2F 25%, #3A3A3A 75%, #2C2C2C 100%)'
+              background: 'linear-gradient(315deg, #1C1C1C 0%, #A0A0A0 25%, #555555 75%, #2A2A2A 100%)'
             }}>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-medium text-gray-400">Conversion Rate</h3>
@@ -118,7 +118,7 @@ export default function DashboardPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Revenue Chart */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(60deg, #2C2C2C 0%, #3A3A3A 60%, #2F2F2F 100%)'
+              background: 'linear-gradient(60deg, #000000 0%, #696969 60%, #1F1F1F 100%)'
             }}>
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-white">Revenue Overview</h3>
@@ -170,7 +170,7 @@ export default function DashboardPage() {
 
             {/* Recent Activity */}
             <div className="p-6 rounded-2xl" style={{ 
-              background: 'linear-gradient(300deg, #2C2C2C 0%, #2F2F2F 35%, #3A3A3A 70%, #2C2C2C 100%)'
+              background: 'linear-gradient(300deg, #2F2F2F 0%, #B0B0B0 35%, #606060 70%, #1A1A1A 100%)'
             }}>
               <h3 className="text-lg font-semibold text-white mb-6">Recent Activity</h3>
               <div className="space-y-4">
@@ -212,7 +212,7 @@ export default function DashboardPage() {
 
           {/* Call to Action Section */}
           <div className="p-8 rounded-2xl text-center" style={{ 
-            background: 'linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 25%, #2F2F2F 50%, #3A3A3A 75%, #2C2C2C 100%)',
+            background: 'linear-gradient(135deg, #000000 0%, #C0C0C0 25%, #404040 50%, #808080 75%, #1A1A1A 100%)',
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
           }}>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
