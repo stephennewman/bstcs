@@ -11,8 +11,11 @@ export default function Home() {
             <a href="/" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#1F2937' }}>
               Home
             </a>
-            <a href="/blog" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#41ab5d' }}>
+            <a href="/blog" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#1F2937' }}>
               Blog
+            </a>
+            <a href="/dashboard" className="text-sm sm:text-base font-medium hover:underline" style={{ color: '#41ab5d' }}>
+              Dashboard
             </a>
             <button className="text-sm sm:text-base font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform shadow-md" style={{ backgroundColor: '#41ab5d', color: '#FFFFFF' }}>
               📥 Download Report
