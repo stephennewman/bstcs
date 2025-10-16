@@ -7,31 +7,80 @@ export const metadata: Metadata = {
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen" style={{ 
+    <div className="min-h-screen flex" style={{ 
       background: 'linear-gradient(135deg, #0F0F0F 0%, #1A1A1A 25%, #2A2A2A 50%, #1F1F1F 75%, #0A0A0A 100%)'
     }}>
-      {/* Header */}
-      <header className="px-4 sm:px-8 lg:px-16 py-4 sm:py-6" style={{ backgroundColor: '#1A1A1A' }}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-2xl sm:text-3xl font-black text-white">
-            NEWMAN INTELLIGENCE
+      {/* Sidebar Navigation */}
+      <aside className="w-16 sm:w-20 flex flex-col items-center py-6" style={{ backgroundColor: '#1A1A1A' }}>
+        <div className="space-y-6">
+          {/* Dashboard Icon */}
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#41ab5d' }}>
+            <span className="text-white text-lg">📊</span>
           </div>
-          <div className="flex items-center space-x-4">
-            <a href="/" className="text-sm sm:text-base font-medium hover:underline text-gray-300">
-              Home
-            </a>
-            <a href="/blog" className="text-sm sm:text-base font-medium hover:underline text-gray-300">
-              Blog
-            </a>
-            <button className="text-sm sm:text-base font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform shadow-md" style={{ backgroundColor: '#41ab5d', color: '#FFFFFF' }}>
-              📥 Download Report
-            </button>
+          
+          {/* Analytics Icon */}
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+            <span className="text-gray-400 text-lg">📈</span>
+          </div>
+          
+          {/* Documents Icon */}
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+            <span className="text-gray-400 text-lg">📄</span>
+          </div>
+          
+          {/* Settings Icon */}
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+            <span className="text-gray-400 text-lg">⚙️</span>
+          </div>
+          
+          {/* Profile Icon */}
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+            <span className="text-gray-400 text-lg">👤</span>
           </div>
         </div>
-      </header>
+      </aside>
 
-      {/* Main Dashboard */}
-      <main className="px-4 sm:px-8 lg:px-16 py-8">
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col">
+        {/* Top Navigation Bar */}
+        <header className="px-6 py-4 flex items-center justify-between" style={{ backgroundColor: '#1A1A1A' }}>
+          <div className="flex items-center space-x-4">
+            <h1 className="text-xl font-bold text-white">NEWMAN INTELLIGENCE</h1>
+          </div>
+          
+          <div className="flex items-center space-x-4">
+            {/* Search Bar */}
+            <div className="relative">
+              <input 
+                type="text" 
+                placeholder="Search" 
+                className="w-64 px-4 py-2 rounded-lg text-sm" 
+                style={{ backgroundColor: '#2A2A2A', color: '#FFFFFF', border: '1px solid #404040' }}
+              />
+              <span className="absolute right-3 top-2.5 text-xs text-gray-400">⌘ + F</span>
+            </div>
+            
+            {/* Action Buttons */}
+            <button className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+              <span className="text-gray-400 text-sm">🌙</span>
+            </button>
+            
+            <button className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+              <span className="text-gray-400 text-sm">🔔</span>
+            </button>
+            
+            <button className="px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+              Export Data
+            </button>
+            
+            <button className="px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-gray-700 transition-colors" style={{ backgroundColor: '#2A2A2A' }}>
+              Share
+            </button>
+          </div>
+        </header>
+
+        {/* Main Dashboard Content */}
+        <main className="px-6 py-8 flex-1">
         <div className="max-w-7xl mx-auto">
           {/* Welcome Section */}
           <div className="mb-8">
@@ -231,16 +280,8 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 mt-12" style={{ backgroundColor: '#1A1A1A' }}>
-        <div className="max-w-7xl mx-auto text-center space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-400">
-          <p>🔹 <span className="font-semibold text-white">About:</span> Modern SaaS platform for financial intelligence</p>
-          <p>🔹 <span className="font-semibold text-white">Features:</span> Tax compliance, analytics, reporting, and automation</p>
-          <p>🔹 <span className="font-semibold text-white">Last updated:</span> January 2025</p>
-        </div>
-      </footer>
+        </main>
+      </div>
     </div>
   );
 }
